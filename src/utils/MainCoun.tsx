@@ -7,14 +7,12 @@ import {
   setTipPercentage,
   setNumPeople,
   selectBill,
-  selectTipPercentage,
   selectNumPeople,
 } from '../store/counterSlice';
 
 const MainCoun: React.FC = () => {
   const dispatch = useDispatch();
   const bill = useSelector(selectBill);
-  const tipPercentage = useSelector(selectTipPercentage);
   const numPeople = useSelector(selectNumPeople);
 
   return (

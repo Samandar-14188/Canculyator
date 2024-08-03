@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from './store';
 
 interface CounterState {
-  bill: number | bigint;
+  bill: number ;
   tipPercentage: number | null;
   numPeople: number;
 }
@@ -17,7 +17,7 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    setBill: (state, action: PayloadAction<number|bigint>) => {
+    setBill: (state, action: PayloadAction<number>) => {
       state.bill = action.payload;
     },
     setTipPercentage: (state, action: PayloadAction<number | null>) => {
